@@ -14,6 +14,7 @@
 		6A051D2824011AF6003E58F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A051D2724011AF6003E58F6 /* Assets.xcassets */; };
 		6A051D2B24011AF6003E58F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A051D2924011AF6003E58F6 /* LaunchScreen.storyboard */; };
 		6A051D2E24011AF6003E58F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A051D2D24011AF6003E58F6 /* main.m */; };
+		6A051D46240129DC003E58F6 /* UseCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6A051D44240129DC003E58F6 /* UseCoreData.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,11 @@
 		6A051D2A24011AF6003E58F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A051D2C24011AF6003E58F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A051D2D24011AF6003E58F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6A051D45240129DC003E58F6 /* UseCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UseCoreData.xcdatamodel; sourceTree = "<group>"; };
+		6A051D47240129F7003E58F6 /* Employee+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Employee+CoreDataProperties.h"; sourceTree = "<group>"; };
+		6A051D48240129F7003E58F6 /* Employee+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Employee+CoreDataClass.h"; sourceTree = "<group>"; };
+		6A051D49240129F7003E58F6 /* Employee+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Employee+CoreDataClass.m"; sourceTree = "<group>"; };
+		6A051D4A240129F7003E58F6 /* Employee+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Employee+CoreDataProperties.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,7 @@
 		6A051D1A24011AF5003E58F6 /* UseCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				6A051D432401220F003E58F6 /* coredata */,
 				6A051D1B24011AF5003E58F6 /* AppDelegate.h */,
 				6A051D1C24011AF5003E58F6 /* AppDelegate.m */,
 				6A051D1E24011AF5003E58F6 /* SceneDelegate.h */,
@@ -70,10 +77,22 @@
 				6A051D2424011AF5003E58F6 /* Main.storyboard */,
 				6A051D2724011AF6003E58F6 /* Assets.xcassets */,
 				6A051D2924011AF6003E58F6 /* LaunchScreen.storyboard */,
+				6A051D44240129DC003E58F6 /* UseCoreData.xcdatamodeld */,
 				6A051D2C24011AF6003E58F6 /* Info.plist */,
 				6A051D2D24011AF6003E58F6 /* main.m */,
 			);
 			path = UseCoreData;
+			sourceTree = "<group>";
+		};
+		6A051D432401220F003E58F6 /* coredata */ = {
+			isa = PBXGroup;
+			children = (
+				6A051D47240129F7003E58F6 /* Employee+CoreDataProperties.h */,
+				6A051D48240129F7003E58F6 /* Employee+CoreDataClass.h */,
+				6A051D49240129F7003E58F6 /* Employee+CoreDataClass.m */,
+				6A051D4A240129F7003E58F6 /* Employee+CoreDataProperties.m */,
+			);
+			path = coredata;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A051D46240129DC003E58F6 /* UseCoreData.xcdatamodeld in Sources */,
 				6A051D2324011AF5003E58F6 /* ViewController.m in Sources */,
 				6A051D1D24011AF5003E58F6 /* AppDelegate.m in Sources */,
 				6A051D2E24011AF6003E58F6 /* main.m in Sources */,
@@ -343,6 +363,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6A051D44240129DC003E58F6 /* UseCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6A051D45240129DC003E58F6 /* UseCoreData.xcdatamodel */,
+			);
+			currentVersion = 6A051D45240129DC003E58F6 /* UseCoreData.xcdatamodel */;
+			path = UseCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6A051D1024011AF5003E58F6 /* Project object */;
 }
